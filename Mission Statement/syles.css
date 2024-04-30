@@ -9,6 +9,10 @@ h2{
     color: #006EB6;
     text-transform: uppercase;
 }
+header{
+    border-bottom: 2px solid black;
+
+}
 body{
     max-width: 600px;
     margin: 0 auto;
