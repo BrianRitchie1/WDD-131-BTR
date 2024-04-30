@@ -16,6 +16,9 @@ header{
 body{
     max-width: 600px;
     margin: 0 auto;
+    padding: 7%;
+    border: 2px solid black;
+
 }
 p{
     text-align: left;
