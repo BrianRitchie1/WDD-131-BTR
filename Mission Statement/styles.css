@@ -1,3 +1,24 @@
+.Dark {
+    background-color: #1a1a1a; 
+    color: #fff;
+}
+
+.Dark body{
+    border-color: #fff;
+}
+
+.Dark header{ 
+    
+    border-bottom-color: #fff;
+}
+
+.Dark p,
+.Dark li{
+    color: #ddd;
+}
+.Dark logo{
+    color-scheme: #1a1a1a;
+}
 
 h1{
     letter-spacing: 1px;
