@@ -10,11 +10,11 @@ function changeTheme() {
     if (selectedTheme === 'Dark') {
         body.classList.add('Dark');
 
-        logo.src = 'white-logo.png';
+        logo.src = 'blue-logo.png';
     } else {
         body.classList.remove('Dark');
 
-        logo.src = 'blue-logo.png';
+        logo.src = 'white-logo.png';
     }
 }
 
