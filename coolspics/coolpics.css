@@ -8,12 +8,12 @@ header {
 
 }
 
-button[type="Menu"] {
+.menu-button {
     background: none;
     border: none;
     padding: 0;
     font: inherit;
-    color: var(--accent-color); 
+    color: var(--accent-color);
     cursor: pointer;
 }
 
@@ -31,12 +31,18 @@ img{
 }
 
 ul {
-    display: block;
+    display: none;
     justify-content: space-around;
     list-style: none;
     padding: 0;
 }
 
+nav.menu.hide ul {
+    display: none;
+}
+nav.menu ul {
+    display: block;
+}
 main {
     display: grid;
     justify-content: center;
@@ -53,7 +59,7 @@ body{
 }
 
 footer{
-    background-color: #51489C ;
+    background-color: #51489C;
 }
 @media screen and (min-width: 700px){
     
@@ -61,15 +67,10 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         padding: 10px;
     }
-    header {
-        grid-template-columns: 1fr;
-    }
-    button[type = "Menu"]{
-        display: none;
-    }
-    ul{
+    nav.menu ul {
         display: flex;
-        margin-right: 0;
-        margin-bottom: 10px;
+    }
+    .menu-button {
+        display: none;
     }
 }
