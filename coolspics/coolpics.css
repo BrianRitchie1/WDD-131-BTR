@@ -67,7 +67,7 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         padding: 10px;
     }
-    nav.menu ul {
+    ul {
         display: flex;
     }
     .menu-button {
