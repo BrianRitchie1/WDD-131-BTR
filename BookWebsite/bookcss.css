@@ -5,22 +5,29 @@ header {
     margin: 5%;
     text-align: center
     
-}   
-ul{
-    justify-content: space-around;
-    list-style: none;
+}    
+nav ul {    list-style-type: none;
     padding: 0;
-    text-align:right;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 main{
     display: grid 1fr 2fr 1fr;
     border-top: 1px solid orange;
     margin: 5%;
     text-align: center;
-
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
+}
+
+.left-colum{
+    padding-right: 15px;
+
 }

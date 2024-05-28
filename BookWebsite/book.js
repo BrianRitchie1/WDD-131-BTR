@@ -30,8 +30,10 @@ function displayArticles() {
       articleElement.classList.add('article');
 
       articleElement.innerHTML = `
-          <h2>${article.title}</h2>
-          <p><strong>Date:</strong> ${article.date}</p>
+          <div class = "left-colom">
+            <h2>${article.title}</h2>
+            <p><strong>Date:</strong> ${article.date}</p>
+          </div>
           <p><strong>Description:</strong> ${article.description}</p>
           <img src="${article.imgSrc}" alt="${article.imgAlt}" />
           <p><strong>Ages:</strong> ${article.ages}</p>
