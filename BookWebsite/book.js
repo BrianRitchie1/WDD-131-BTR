@@ -30,16 +30,18 @@ function displayArticles() {
       articleElement.classList.add('article');
 
       articleElement.innerHTML = `
-          <div class = "left-colom">
-            <h2>${article.title}</h2>
-            <p><strong>Date:</strong> ${article.date}</p>
-          </div>
-          <p><strong>Description:</strong> ${article.description}</p>
-          <img src="${article.imgSrc}" alt="${article.imgAlt}" />
+          <div class="left-column">
+          <p><strong>Date:</strong> ${article.date}</p>
           <p><strong>Ages:</strong> ${article.ages}</p>
           <p><strong>Genre:</strong> ${article.genre}</p>
           <p><strong>Stars:</strong> ${article.stars}</p>
-      `;
+          </div>
+          <div class="middle-column">
+          <h2>${article.title}</h2>
+          <img src="${article.imgSrc}" alt="${article.imgAlt}" />
+          <p><strong>Description:</strong> ${article.description}</p>
+          </div>
+    `;
 
       container.appendChild(articleElement);
   });
