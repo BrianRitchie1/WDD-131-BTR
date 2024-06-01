@@ -38,15 +38,20 @@ main.grid-container {
     border: 1px solid #ccc;
     border-radius: 5px;
     grid-column: 3;
+    grid-row: 1;
 
 }
 
 .article {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px
 }
 
 .left-column {
@@ -55,7 +60,9 @@ main.grid-container {
 }
 
 .middle-column {
-    padding-left: 15px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 .article img {
@@ -63,4 +70,5 @@ main.grid-container {
     height: auto;
     display: block;
     margin-bottom: 10px;
+
 }
