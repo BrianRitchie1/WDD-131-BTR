@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #FF0000;
+    --secondary-color: #000;
+    --text-dark: #000;
+    --text-light: #E98BB9;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Comic Sans', cursive;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E98BB9;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+header img.logo {
+    max-width: 100px;
+}
+
+header h1 {
+    font-family: #FFF;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+}
+
+#search-form button {
+    padding: 10px 20px;
+    background-color: #FFF;
+    border: none;
+    color: #E98BB9;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #FF0000 ;
+    max-width: 600px;
+    width: 100%;
+}
+
+.recipe img {
+    max-width: 100%;
+}
+
+.recipe__tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.recipe__tags li {
+    background-color: #FFF;
+    margin-top: 10px;
+    color: #E98BB9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.recipe__ratings {
+    margin: 10px 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF0000;
+    padding: 20px;
+}
+
+footer .social {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #search-form {
+        flex-direction: row;
+    }
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+@media(max-width: 600px){
+    body {
+        background-color: #FFF;
+    }
+    .recipe {
+        border: none;
+    }
+    
+}
+
+@media (min-width: 960px) {
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+}
