@@ -1,7 +1,126 @@
-img {
-    max-width: 100%;
+/* final.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
-    max-width: 100px;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #FF0000;
+    padding: 0 20px;
+    height: 80px;
+}
+
+header .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    height: 100%;
+    object-fit: cover;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    flex-grow: 1;
+    text-align: center;
+}
+
+header .filter {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .filter label {
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+main .container img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+#meme-details {
+    margin-top: 20px;
+}
+
+#meme-details .meme {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#meme-details .meme .meme-header {
+    width: 100%;
+    border-bottom: 2px solid red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#meme-details h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#meme-details img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+    display: block;
+}
+
+#meme-details p {
+    margin: 0;
+    flex: 1;
+}
+
+/* Responsive Design for mobile view */
+@media (max-width: 600px) {
+    #meme-details .meme {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid red;
+        padding-bottom: 10px;
+    }
+
+    #meme-details h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    #meme-details img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto; /* Center the image */
+    }
+
+    #meme-details p {
+        text-align: center;
+        margin: 10px 0;
+    }
 }

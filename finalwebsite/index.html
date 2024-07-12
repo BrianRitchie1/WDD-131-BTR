@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Memeology</title>
     <link rel="stylesheet" href="final.css">
-
 </head>
 <body>
     <header>
-
+        <img src="images/logo.png" class="logo">
+        <h1>Memeology</h1>
+        <div class="filter">
+            <label for="sort">Sort:</label>
+            <select id="sort">
+                <option value="number">Number</option>
+                <option value="alphabetical">Alphabetical</option>
+            </select>
+        </div>
     </header>
 
     <main>
-        <img src="images/logo.png" class = "logo">
-        <img src="images/WDD FINAL WIREFRAME 1.PNG" alt="wireframe">
-        <img src="images/WDD FINAL WIREFRAME 2 Mobile.PNG" alt="wireframe">
-        <img src="images/WDD FINAL WIREFRAME 2.PNG" alt="wireframe">
-        <p>This website will be a place for people who enjoy memes and who seek for find the orgins of these internet jokes. I hope this will be educational an entertaings at the same time</p>
-        <p>Colors are #000, #FF0000, and #808080</p>
+        
 
-
-
-
+        <!-- Meme details will be displayed here -->
+        <div id="meme-details"></div>
     </main>
     
     <footer>
-
+        <p>Copyright Brian Ritchie 2024</p>
     </footer>
+
+    <!-- Include the modules -->
+    <script type="module" src="final.js"></script>
 </body>
 </html>
