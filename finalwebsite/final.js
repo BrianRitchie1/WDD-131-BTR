@@ -1,14 +1,11 @@
-// final.js
 
 import { memes } from './data.js';
 
-// Function to display meme details
 function displayMemeDetails(memes) {
     const memeDetailsDiv = document.getElementById('meme-details');
-    memeDetailsDiv.innerHTML = ''; // Clear previous content
+    memeDetailsDiv.innerHTML = '';
 
     memes.forEach(meme => {
-        // Create HTML content for each meme
         const memeContent = `
             <div class="meme">
                 <div class="meme-header">
@@ -19,12 +16,10 @@ function displayMemeDetails(memes) {
             </div>
         `;
 
-        // Insert the meme content into the memeDetailsDiv
         memeDetailsDiv.innerHTML += memeContent;
     });
 }
 
-// Function to sort memes
 function sortMemes(criteria) {
     let sortedMemes = [...memes];
     if (criteria === 'number') {
@@ -35,10 +30,8 @@ function sortMemes(criteria) {
     displayMemeDetails(sortedMemes);
 }
 
-// Event listener for the filter
 document.getElementById('sort').addEventListener('change', function() {
     sortMemes(this.value);
 });
 
-// Call the function to display meme details initially
 displayMemeDetails(memes);

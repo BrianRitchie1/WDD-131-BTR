@@ -47,6 +47,9 @@ header .filter label {
 main {
     padding: 20px;
 }
+main p{
+    text-align: center;
+}
 
 main .container {
     display: flex;
@@ -61,42 +64,30 @@ main .container img {
     margin: 10px;
 }
 
-#meme-details {
-    margin-top: 20px;
-}
-
 #meme-details .meme {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-#meme-details .meme .meme-header {
-    width: 100%;
-    border-bottom: 2px solid red;
+    display: block;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
 }
 
 #meme-details h2 {
-    font-size: 1.5em;
-    margin: 0;
-    padding: 10px 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 #meme-details img {
-    width: 300px;
+    max-width: 700px;
     height: auto;
-    margin-right: 20px;
-    display: block;
+    margin: 10px auto; /* Center the image */
 }
 
 #meme-details p {
-    margin: 0;
-    flex: 1;
+    text-align: center;
+    margin: 10px 0;
 }
+
 footer {
     background-color: #000;
     padding: 20px;
@@ -125,6 +116,7 @@ footer p {
     margin: 0;
 }
 
+
 /* Responsive Design for mobile view */
 @media (max-width: 600px) {
     #meme-details .meme {
@@ -141,7 +133,7 @@ footer p {
     }
 
     #meme-details img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         margin: 10px auto; /* Center the image */
     }
