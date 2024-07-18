@@ -56,6 +56,7 @@ main .container {
 }
 
 main .container img {
+    aspect-ratio: 16/9;
     max-width: 100%;
     height: auto;
     margin: 10px;
@@ -87,6 +88,8 @@ main .container img {
 }
 
 #meme-details img {
+    aspect-ratio: 16/9;
+
     width: 300px;
     height: auto;
     margin-right: 20px;
@@ -125,7 +128,6 @@ footer p {
     margin: 0;
 }
 
-/* Responsive Design for mobile view */
 @media (max-width: 600px) {
     #meme-details .meme {
         display: block;
@@ -141,9 +143,11 @@ footer p {
     }
 
     #meme-details img {
+        aspect-ratio: 16/9;
+
         width: 100%;
         height: auto;
-        margin: 10px auto; /* Center the image */
+        margin: 10px auto; 
     }
 
     #meme-details p {
