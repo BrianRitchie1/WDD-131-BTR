@@ -17,5 +17,17 @@ export const memes = [
         image: "images/gangnambaby.jpg",
         number: 3,
         description: "This meme is a twist meme, where instead of having it's first steps, it goes into a complicated K-pop dance. This meme came about do to the rise in popluatity of the song Gandom Style."
+    },
+    {
+        name: "Top, Then Bottom",
+        image: "images/top_then_bottom.jpg",
+        number: 4,
+        description:"This type of meme usually consists of a statement, then an counter or irony to that statement. This type of meme was really popular in the 2010's era of memes."
+    },
+    {
+        name: "Doge",
+        image: "images/doge.jpg",
+        number: 5,
+        description:"This image of a dog was used to illustrate how dogs would act if they posted memes or spoke english. Also a part of the greater dog / cats memes category."
     }
 ];
