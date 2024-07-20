@@ -26,7 +26,7 @@ export const memes = [
     },
     {
         name: "Doge",
-        image: "images/Doge.jpg",
+        image: "images/doge.jpg",
         number: 5,
         description:"This image of a dog was used to illustrate how dogs would act if they posted memes or spoke english. Also a part of the greater dog / cats memes category."
     }
